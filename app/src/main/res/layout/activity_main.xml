@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tour12"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentGateway"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="58dp"
+        android:gravity="center"
+        android:text="Payment Gateway"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameOnCard"
+        android:layout_below="@+id/paymentGateway"
+        android:background="#30ffffff"
+        android:hint=" Name On Card"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardNumber"
+        android:layout_below="@+id/nameOnCard"
+        android:background="#30ffffff"
+        android:hint=" Card Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/dateOfExpir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardNumber"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_calendar_month_24"
+        android:drawablePadding="20dp"
+        android:hint=" Date of Expiration"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cvc"
+        android:layout_below="@+id/dateOfExpir"
+        android:background="#30ffffff"
+        android:hint=" CVC"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:drawablePadding="20dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paybttn"
+        android:layout_width="224dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/cvc"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+        android:text="PAY"
+
+        />
+
+</RelativeLayout>

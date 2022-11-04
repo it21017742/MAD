@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tour12"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalpayment"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="58dp"
+        android:gravity="center"
+        android:text="Total Payment"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalpayment"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:drawablePadding="20dp"
+        android:hint=" Amount"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/paybttn"
+        android:layout_width="224dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="225dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/black"
+
+        android:text="PAY" />
+
+
+</RelativeLayout>
